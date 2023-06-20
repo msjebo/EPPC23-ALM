@@ -3,8 +3,8 @@
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "Smithsonian 3D",
-      "iconUri": "https://pafeblobprodam.blob.core.windows.net/20230615t000000z88c8e932dcfb4629ba9e25311ef5c5e4/ppa_5Fsmithsonian-203d_iconblob.Png?sv=2018-03-28&sr=c&sig=%2BkPmXmwsQzoy0xEqXzhqht4i%2FEtodum4A1%2FCTjwSGPQ%3D&se=2023-06-21T16%3A00%3A00Z&sp=rl",
-      "id": "/providers/microsoft.powerapps/apis/shared_ppa-5fsmithsonian-203d-5fded6149d4f5103cf",
+      "iconUri": "https://pafeblobprodam.blob.core.windows.net/20230620t000000z432333afa0b742d68b3a1a54f87feebf/ppa_5Fsmithsonian-203d_iconblob.Png?sv=2018-03-28&sr=c&sig=X5uWmjTPvqC7ogDEOQ5fqX%2Bc88LrLbMIg%2FxF1m2oJXY%3D&se=2023-06-25T20%3A00%3A00Z&sp=rl",
+      "id": "/providers/microsoft.powerapps/apis/shared_ppa-5fsmithsonian-203d-5f3f09bd14089d04f6",
       "isCustomApiConnection": true,
       "parameterHints": {},
       "parameterHintsV2": {}
@@ -17,28 +17,42 @@
     "dependents": [],
     "id": "003c10bb-0e9a-4c4b-805d-593afc9cb727"
   },
-  "501594da-897b-4442-bfaf-f5c42ba55b97": {
+  "476b6079-0f57-4252-a61b-714201cdf6a6": {
     "connectionRef": {
+      "apiTier": "Standard",
       "displayName": "OneDrive for Business",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
     },
     "datasets": {},
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "9e9a9b94-4038-4436-b843-b6897f60cb06"
+      "a49d08e9-cf57-41cf-a599-3a2c46f5e426"
     ],
-    "id": "501594da-897b-4442-bfaf-f5c42ba55b97"
+    "id": "476b6079-0f57-4252-a61b-714201cdf6a6"
   },
-  "9e9a9b94-4038-4436-b843-b6897f60cb06": {
+  "a49d08e9-cf57-41cf-a599-3a2c46f5e426": {
     "connectionRef": {
+      "apiTier": "Standard",
       "displayName": "Excel",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/excel/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excel"
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "476b6079-0f57-4252-a61b-714201cdf6a6": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "476b6079-0f57-4252-a61b-714201cdf6a6"
+        }
+      }
     },
     "datasets": {
-      "b!F5trxW5DUkCAZ2g93lUQ_8AM_RIfwEVDvKG0m-nFD32BUd0ftpqNSYXR1d6LoHJi.01SRHTBBKZO5ZJE7GQZJDI4DVGPFBM55MR": {
+      "b!pKwsr2xNYUCPoAA35BYISsAM_RIfwEVDvKG0m-nFD32BUd0ftpqNSYXR1d6LoHJi.01NFBXGDO3E7FJICDZVRDJSDF2WKQ7BYP7": {
         "dataSources": {
           "Coral": {
             "tableName": "Coral"
@@ -54,9 +68,9 @@
       "Occupants"
     ],
     "dependencies": {
-      "fileSource": "501594da-897b-4442-bfaf-f5c42ba55b97"
+      "fileSource": "476b6079-0f57-4252-a61b-714201cdf6a6"
     },
     "dependents": [],
-    "id": "9e9a9b94-4038-4436-b843-b6897f60cb06"
+    "id": "a49d08e9-cf57-41cf-a599-3a2c46f5e426"
   }
 }
